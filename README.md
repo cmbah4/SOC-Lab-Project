@@ -17,7 +17,7 @@ sudo login fakeuser
 Result:
 - Multiple incorrect login attempts recorded
 - Authentication failures logged in /var/log/auth.log
-![Failed Login](Screenshots/failed_login.png)
+![Failed Login](screenshots/failed_login.png)
 
 ### 2. Failed Sudo (Privilege Escalation Attempt)
 Failed privilege escalation was simulated by entering incorrect passwords for vboxuser using sudo commands:
