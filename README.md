@@ -34,14 +34,7 @@ Result:
 - Port 631/tcp found open (IPP - printing service)
 ![Nmap Port 631](screenshots/nmap_port_631.png)
 
-### 4. Local Network Scan
-A more comprehensive scan of common ports:
-nmap -F 127.0.0.1
-Result:
-- Identified additional open services and ports on the host
-![Nmap Scan](screenshots/nmap_scan.png)
-
-### 5. Full Port Scan with Service Detection
+### 4. Full Port Scan with Service Detection
 A full TCP port scan with service version detection:
 sudo nmap -sV -p- 127.0.0.1
 Result:
@@ -49,7 +42,7 @@ Result:
 - Confirmed exposed services on the host
 ![Nmap Full Scan](screenshots/nmap_full_scan.png)
 
-### 6. Viewing Active Services and Processes
+### 5. Viewing Active Services and Processes
 To view listening ports and processes using ss:
 sudo ss -tulnp
 Result:
@@ -57,7 +50,7 @@ Result:
 - Provided insight into system services and network exposure
 ![Processes](screenshots/processes.png)
 
-### 7. SSH Failed Login Attempts
+### 6. SSH Failed Login Attempts
 Simulated SSH login failures were generated:
 Invalid user login attempts
 Multiple failed password attempts
@@ -66,17 +59,17 @@ Result:
 - Source IP: 127.0.0.1
 ![SSH Failed Login](screenshots/ssh_failed.png)
 
-### 8. Correlated Security Events
+### 7. Correlated Security Events
 Multiple events combined for analysis:
 - Network scanning
 - Open port discovery
 - Running services
 - Authentication failures
 Result:
-- Demonstrates how SOC analysts correlate logs from multiple sources
+- Demonstrates multiple security events (authentication failures, scanning, and service enumeration) that can be analyzed together.
 ![Multi-Event Log](screenshots/multi_event_log.png)
 
-### 9. System Log Snapshot
+### 8. System Log Snapshot
 A snapshot of the system logs (syslog) was taken:
 cat /var/log/syslog
 Result:
