@@ -91,11 +91,11 @@ Multiple events combined for analysis:
 ### 8. System Log Snapshot
 A snapshot of the system logs (syslog) was taken:
 ```bash
-cat /var/log/syslog
+sudo tail -f /var/log/syslog
 ```
 
 **Result:**
-- Displays general system activity and messages
+- Displays real-time system activity and messages
 - Useful for detecting anomalies and system events
 ![System Log](screenshots/syslog_view.png)
 
